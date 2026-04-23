@@ -1,1 +1,53 @@
+local_backend: true
 
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "uploads"
+public_folder: "/uploads"
+
+collections:
+  - name: "site_content"
+    label: "Site Content"
+    files:
+      - name: "posts"
+        label: "Posts and Stories"
+        file: "content/posts.json"
+        format: "json"
+        fields:
+          - label: "Stories"
+            name: "stories"
+            widget: "list"
+            field:
+              label: "Story label"
+              name: "label"
+              widget: "string"
+          - label: "Posts"
+            name: "posts"
+            widget: "list"
+            summary: "{{fields.location}} — {{fields.date}}"
+            fields:
+              - { label: "Location", name: "location", widget: "string" }
+              - { label: "Caption", name: "caption", widget: "text" }
+              - { label: "Likes", name: "likes", widget: "number", value_type: "int", min: 0 }
+              - { label: "Date", name: "date", widget: "string" }
+              - label: "Comments"
+                name: "comments"
+                widget: "list"
+                summary: "{{fields.username}}"
+                fields:
+                  - { label: "Username", name: "username", widget: "string" }
+                  - { label: "Text", name: "text", widget: "text" }
+              - label: "Media"
+                name: "media"
+                widget: "list"
+                summary: "{{fields.type}}"
+                fields:
+                  - label: "Type"
+                    name: "type"
+                    widget: "select"
+                    options: ["image", "video"]
+                  - { label: "Source URL or uploaded file", name: "src", widget: "string" }
+                  - { label: "Thumbnail URL (optional)", name: "thumb", widget: "string", required: false }
+                  - { label: "Poster URL (optional)", name: "poster", widget: "string", required: false }

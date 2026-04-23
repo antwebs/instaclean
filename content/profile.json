@@ -1,0 +1,12 @@
+{
+  "username": "instaclean.demo",
+  "display_name": "InstaClean UI",
+  "bio": "Клон профиля с плотной сеткой публикаций, модальным просмотром постов и вертикальной Reels-лентой.",
+  "meta": "Frontend demo · HTML · CSS · JS",
+  "link_text": "instaclean.demo/ui-showcase",
+  "link_url": "#",
+  "followers_text": "128 тыс.",
+  "following_text": "314",
+  "avatar_initials": "IC",
+  "is_verified": true
+}

@@ -1,0 +1,28 @@
+{
+  "stories": [
+    {
+      "label": "UI"
+    },
+    {
+      "label": "Code"
+    },
+    {
+      "label": "Grid"
+    },
+    {
+      "label": "Shots"
+    },
+    {
+      "label": "Video"
+    },
+    {
+      "label": "Mobile"
+    },
+    {
+      "label": "Feed"
+    },
+    {
+      "label": "Clean"
+    }
+  ]
+}

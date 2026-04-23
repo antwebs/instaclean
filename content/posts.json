@@ -1,18 +1,6 @@
 {
   "posts": [
     {
-      "location": "lesosibirsk",
-      "caption": "Шары на выписку, шарики в роддом, воздушные шары для роддома. Заказать шары на выписку, красивые шары для выписки, шары для выписки из роддома. Купить воздушные шары в Москве, шары Московская область, шары в Одинцово, шары Истра, шары Красногорск, шары Химки, шары Новая Москва, шары Коммунарка, шары Видное.\n\nНежные воздушные шарики с гелием, гелиевые шарики для мальчика. Шары на выписку для мальчика.",
-      "likes": 23,
-      "date": "23.04.2026",
-      "media": [
-        {
-          "type": "image",
-          "src": "https://images.unsplash.com/photo-1516035069371-29a1b244cc32?auto=format&fit=crop&w=1400&q=80"
-        }
-      ]
-    },
-    {
       "media": [
         {
           "type": "image",
@@ -44,7 +32,9 @@
         ]
       ],
       "date": "12 марта 2026",
-      "badge": "Пост"
+      "badge": "Пост",
+      "pinned": true,
+      "pin_order": 1
     },
     {
       "media": [
@@ -68,7 +58,9 @@
         ]
       ],
       "date": "18 марта 2026",
-      "badge": "Фото"
+      "badge": "Фото",
+      "pinned": true,
+      "pin_order": 2
     },
     {
       "media": [
@@ -92,7 +84,9 @@
         ]
       ],
       "date": "22 марта 2026",
-      "badge": "Видео"
+      "badge": "Видео",
+      "pinned": true,
+      "pin_order": 3
     },
     {
       "media": [
@@ -121,7 +115,9 @@
         ]
       ],
       "date": "27 марта 2026",
-      "badge": "Пост"
+      "badge": "Пост",
+      "pinned": false,
+      "pin_order": null
     },
     {
       "media": [
@@ -145,7 +141,9 @@
         ]
       ],
       "date": "2 апреля 2026",
-      "badge": "Фото"
+      "badge": "Фото",
+      "pinned": false,
+      "pin_order": null
     },
     {
       "media": [
@@ -174,7 +172,9 @@
         ]
       ],
       "date": "7 апреля 2026",
-      "badge": "Пост"
+      "badge": "Пост",
+      "pinned": false,
+      "pin_order": null
     },
     {
       "media": [
@@ -198,7 +198,9 @@
         ]
       ],
       "date": "10 апреля 2026",
-      "badge": "Фото"
+      "badge": "Фото",
+      "pinned": false,
+      "pin_order": null
     },
     {
       "media": [
@@ -222,7 +224,9 @@
         ]
       ],
       "date": "14 апреля 2026",
-      "badge": "Фото"
+      "badge": "Фото",
+      "pinned": false,
+      "pin_order": null
     },
     {
       "media": [
@@ -246,7 +250,9 @@
         ]
       ],
       "date": "19 апреля 2026",
-      "badge": "Видео"
+      "badge": "Видео",
+      "pinned": false,
+      "pin_order": null
     },
     {
       "media": [
@@ -275,7 +281,9 @@
         ]
       ],
       "date": "20 апреля 2026",
-      "badge": "Пост"
+      "badge": "Пост",
+      "pinned": false,
+      "pin_order": null
     }
   ],
   "stories": [

@@ -1,0 +1,5 @@
+Исправление для Decap Publish:
+- content/posts.json приведен к схеме admin/config.yml
+- stories теперь объекты {label}
+- comments теперь объекты {username,text}
+- pinned/pin_order сохранены

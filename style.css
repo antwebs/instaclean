@@ -18,7 +18,8 @@
 }
 
 * { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
-html, body { margin: 0; min-height: 100%; background: var(--bg); color: var(--text); font-family: var(--font); }
+html, body { margin: 0; min-height: 100%; background: var(--bg); color: var(--text); font-family: var(--font); scrollbar-width: none; }
+html::-webkit-scrollbar, body::-webkit-scrollbar { display: none; width: 0; height: 0; }
 body.is-locked { overflow: hidden; }
 button, input { font: inherit; color: inherit; }
 button { background: none; border: 0; cursor: pointer; }
@@ -189,12 +190,6 @@ svg { width: 100%; height: 100%; }
 }
 .post-card__multi span:first-child { transform: translate(-2.5px, 2.5px); opacity: .95; }
 .post-card__multi span:last-child { background: rgba(255,255,255,.04); }
-
-.post-card__pin {
-  position: absolute; top: 9px; right: 9px; z-index: 2; width: 18px; height: 18px; color: #fff;
-  filter: drop-shadow(0 1px 8px rgba(0,0,0,.32));
-}
-.post-card__pin svg { width: 100%; height: 100%; }
 .post-card__skeleton {
   position: absolute; inset: 0; background: linear-gradient(90deg, #0f0f0f 0%, #181818 40%, #0f0f0f 70%); background-size: 250% 100%; animation: shimmer 1.7s linear infinite;
 }
@@ -308,6 +303,31 @@ svg { width: 100%; height: 100%; }
 }
 
 @media (max-width: 900px) {
+  html, body {
+    height: 100%;
+    overflow-x: hidden;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+  html::-webkit-scrollbar,
+  body::-webkit-scrollbar,
+  .main::-webkit-scrollbar,
+  .main__inner::-webkit-scrollbar {
+    display: none;
+    width: 0;
+    height: 0;
+  }
+  .main {
+    height: 100vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+  .main__inner {
+    overflow-x: hidden;
+  }
+
   .app { display: block; }
   .sidebar { display: none; }
   .mobile-topbar { display: none !important; }
@@ -337,38 +357,49 @@ svg { width: 100%; height: 100%; }
   .post-card__metrics { display: none; }
   .modal__dialog { display: none; }
   .mobile-viewer { display: block; position: fixed; inset: 0; overflow: hidden; background: #000; }
-  .mobile-viewer__topbar { position: sticky; top: 0; z-index: 8; display: flex; align-items: center; justify-content: space-between; gap: 12px; height: 52px; padding: 8px 12px; background: rgba(0,0,0,.96); border-bottom: 1px solid rgba(255,255,255,.08); }
+  .mobile-viewer__topbar { position: sticky; top: 0; z-index: 8; display: flex; align-items: center; justify-content: space-between; gap: 12px; height: 56px; padding: 10px 12px; background: rgba(0,0,0,.98); border-bottom: 1px solid rgba(255,255,255,.08); }
   .mobile-viewer__topbar-left { display: inline-flex; align-items: center; gap: 10px; min-width: 0; }
   .mobile-viewer__topbar-left .brand__mark { width: 20px; height: 20px; border-radius: 6px; }
   .mobile-viewer__topbar-left .brand__mark::before { inset: 4px; border-width: 1.5px; border-radius: 5px; }
   .mobile-viewer__topbar-left .brand__mark::after { top: 5px; right: 5px; width: 3px; height: 3px; }
-  .mobile-viewer__topbar-left .brand__text { font-size: 16px; font-weight: 700; }
+  .mobile-viewer__topbar-left .brand__text { font-size: 17px; font-weight: 700; }
   .mobile-viewer__topbar-actions { display: flex; align-items: center; gap: 2px; }
-  .mobile-viewer__topbar .icon-btn { width: 32px; height: 32px; }
-  .mobile-viewer__topbar .icon-btn svg { width: 20px; height: 20px; }
-  .mobile-viewer__nav { position: sticky; bottom: 0; z-index: 8; display: grid; grid-template-columns: repeat(5, 1fr); align-items: center; height: 52px; background: rgba(0,0,0,.96); border-top: 1px solid rgba(255,255,255,.08); }
+  .mobile-viewer__topbar .icon-btn { width: 34px; height: 34px; }
+  .mobile-viewer__topbar .icon-btn svg { width: 22px; height: 22px; }
+  .mobile-viewer__nav { position: sticky; bottom: 0; z-index: 8; display: grid; grid-template-columns: repeat(5, 1fr); align-items: center; height: 52px; background: rgba(0,0,0,.98); border-top: 1px solid rgba(255,255,255,.08); }
   .mobile-viewer__nav .mobile-nav__item { display: grid; place-items: center; }
   .mobile-viewer__nav .mobile-nav__item svg { width: 24px; height: 24px; }
-  .mobile-post-feed { display: block; height: calc(100vh - 104px); overflow-y: auto; overflow-x: hidden; overscroll-behavior-y: contain; overscroll-behavior-x: none; scrollbar-width: none; -ms-overflow-style: none; background: #000; -webkit-overflow-scrolling: touch; }
+  .mobile-post-feed { display: block; height: calc(100vh - 108px); overflow-y: auto; overflow-x: hidden; overscroll-behavior-y: contain; overscroll-behavior-x: none; scrollbar-width: none; -ms-overflow-style: none; background: #000; -webkit-overflow-scrolling: touch; }
   .mobile-post-feed.is-swipe-lock { overflow-y: hidden; overscroll-behavior-y: none; }
   .mobile-viewer.is-swipe-lock { overflow: hidden; touch-action: none; }
   .mobile-viewer.is-swipe-lock .mobile-post-feed { overflow-y: hidden; overscroll-behavior-y: none; }
   .mobile-post-feed::-webkit-scrollbar { display: none; width: 0; height: 0; }
-  .mobile-post { width: 100%; max-width: 100vw; overflow: hidden; padding-bottom: 14px; border-bottom: 1px solid rgba(255,255,255,.08); background: #000; }
-  .mobile-post__header { display: flex; align-items: center; justify-content: space-between; gap: 8px; padding: 6px 12px; background: #000; }
-  .mobile-post .mini-profile__avatar { width: 26px; height: 26px; font-size: 10px; }
-  .mobile-post .mini-profile__text strong { font-size: 10px; }
-  .mobile-post .mini-profile__text span { font-size: 9px; }
-  .mobile-post__body { padding: 7px 12px 0; display: grid; gap: 6px; background: #000; }
-  .mobile-post__actions, .mobile-post__actions-left { display: flex; align-items: center; gap: 8px; }
+  .mobile-post { width: 100%; max-width: 100vw; overflow: hidden; padding-bottom: 18px; border-bottom: 1px solid rgba(255,255,255,.08); background: #000; }
+  .mobile-post__header { display: flex; align-items: center; justify-content: space-between; gap: 10px; padding: 10px 12px 8px; background: #000; }
+  .mobile-post .mini-profile__avatar { width: 32px; height: 32px; font-size: 12px; }
+  .mobile-post .mini-profile__text strong { font-size: 13px; }
+  .mobile-post .mini-profile__text span { font-size: 12px; }
+  .mobile-post__body { padding: 10px 12px 0; display: grid; gap: 8px; background: #000; }
+  .mobile-post__actions, .mobile-post__actions-left { display: flex; align-items: center; }
+  .mobile-post__actions-left { gap: 16px; }
   .mobile-post__actions { justify-content: space-between; }
-  .mobile-post__body .icon-btn { width: 28px; height: 28px; }
-  .mobile-post__body .icon-btn svg { width: 16px; height: 16px; }
-  .mobile-post__likes, .mobile-post__caption, .mobile-post__comments-link, .mobile-post__meta, .mobile-post__date { font-size: 11px; line-height: 1.32; }
-  .mobile-post__caption strong { margin-right: 5px; }
+  .mobile-post__body .icon-btn { width: 24px; height: 24px; padding: 0; border-radius: 0; background: transparent; }
+  .mobile-post__body .icon-btn:hover { background: transparent; }
+  .mobile-post__body .icon-btn svg { width: 24px; height: 24px; }
+  .mobile-post__likes { font-size: 13px; line-height: 1.4; font-weight: 700; }
+  .mobile-post__caption { font-size: 13px; line-height: 1.45; }
+  .mobile-post__comments-link, .mobile-post__meta { font-size: 12px; line-height: 1.35; }
+  .mobile-post__date { font-size: 11px; line-height: 1.3; letter-spacing: .02em; text-transform: uppercase; }
+  .mobile-post__caption strong { margin-right: 6px; }
   .mobile-post__comments-link, .mobile-post__meta, .mobile-post__date { color: var(--muted); }
   .mobile-post .carousel { width: 100vw; max-width: 100%; aspect-ratio: 376 / 469; background: #000; touch-action: pan-y pinch-zoom; }
   .mobile-post .carousel__slide img, .mobile-post .carousel__slide video { object-fit: cover; }
   .carousel__nav { width: 22px; height: 22px; }
+  .mobile-post .carousel__nav { width: 28px; height: 28px; background: rgba(0,0,0,.30); backdrop-filter: blur(12px); color: #fff; box-shadow: none; }
   .carousel__nav svg { width: 11px; height: 11px; }
+  .mobile-post .carousel__nav svg { width: 16px; height: 16px; }
+  .mobile-post .carousel__nav--prev { left: 10px; }
+  .mobile-post .carousel__nav--next { right: 10px; }
+  .mobile-post .carousel__dots { bottom: 10px; }
+  .mobile-post .carousel__dot { width: 6px; height: 6px; }
 }

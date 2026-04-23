@@ -1,6 +1,8 @@
 {
   "posts": [
     {
+      "badge": "Пост",
+      "pin_order": 1,
       "media": [
         {
           "type": "image",
@@ -16,11 +18,14 @@
           "type": "video",
           "src": "https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4",
           "poster": "https://images.unsplash.com/photo-1516035069371-29a1b244cc32?auto=format&fit=crop&w=1200&q=80"
+        },
+        {
+          "type": "image",
+          "src": "uploads/101shar_1775140979_3866484366151034869_5939120383.jpg"
         }
       ],
       "caption": "Минималистичный сетап и рабочий процесс. В этом посте несколько медиа, чтобы проверить карточку-карусель, индикатор и просмотр внутри модального окна.",
-      "location": "Helsinki Studio",
-      "likes": 18230,
+      "date": "12 марта 2026",
       "comments": [
         [
           "anna.ui",
@@ -31,12 +36,13 @@
           "Вот такой пост с несколькими вложениями уже ближе к реальному профилю."
         ]
       ],
-      "date": "12 марта 2026",
-      "badge": "Пост",
+      "location": "Helsinki Studio",
       "pinned": true,
-      "pin_order": 1
+      "likes": 18230
     },
     {
+      "badge": "Фото",
+      "pin_order": 2,
       "media": [
         {
           "type": "image",
@@ -45,8 +51,7 @@
         }
       ],
       "caption": "Чем чище базовая структура, тем легче потом довести интерфейс до нужной плотности.",
-      "location": "Dev Corner",
-      "likes": 24300,
+      "date": "18 марта 2026",
       "comments": [
         [
           "frontend.lab",
@@ -57,12 +62,13 @@
           "Хорошая база под реальную подгрузку из папки."
         ]
       ],
-      "date": "18 марта 2026",
-      "badge": "Фото",
+      "location": "Dev Corner",
       "pinned": true,
-      "pin_order": 2
+      "likes": 24300
     },
     {
+      "badge": "Видео",
+      "pin_order": 3,
       "media": [
         {
           "type": "video",
@@ -71,8 +77,7 @@
         }
       ],
       "caption": "Тестовый ролик для проверки видео в карточке, модальном окне и Reels-ленте.",
-      "location": "Motion Test",
-      "likes": 38910,
+      "date": "22 марта 2026",
       "comments": [
         [
           "motion.ui",
@@ -83,12 +88,13 @@
           "Постер тоже выглядит уместно в гриде."
         ]
       ],
-      "date": "22 марта 2026",
-      "badge": "Видео",
+      "location": "Motion Test",
       "pinned": true,
-      "pin_order": 3
+      "likes": 38910
     },
     {
+      "badge": "Пост",
+      "pin_order": null,
       "media": [
         {
           "type": "image",
@@ -102,8 +108,7 @@
         }
       ],
       "caption": "Групповой кадр добавляет в сетку разнообразие и помогает удержать визуальный ритм. Внутри — карусель из двух фотографий.",
-      "location": "Workshop",
-      "likes": 20991,
+      "date": "27 марта 2026",
       "comments": [
         [
           "ux.daily",
@@ -114,12 +119,13 @@
           "Ритм белого и темного кадров очень к месту."
         ]
       ],
-      "date": "27 марта 2026",
-      "badge": "Пост",
+      "location": "Workshop",
       "pinned": false,
-      "pin_order": null
+      "likes": 20991
     },
     {
+      "badge": "Фото",
+      "pin_order": null,
       "media": [
         {
           "type": "image",
@@ -128,8 +134,7 @@
         }
       ],
       "caption": "Мобильный и десктопный сценарии должны ощущаться частью одной системы.",
-      "location": "Responsive Lab",
-      "likes": 26500,
+      "date": "2 апреля 2026",
       "comments": [
         [
           "grid.lover",
@@ -140,12 +145,13 @@
           "На маленьких экранах интерфейс остался плотным и читаемым."
         ]
       ],
-      "date": "2 апреля 2026",
-      "badge": "Фото",
+      "location": "Responsive Lab",
       "pinned": false,
-      "pin_order": null
+      "likes": 26500
     },
     {
+      "badge": "Пост",
+      "pin_order": null,
       "media": [
         {
           "type": "video",
@@ -159,8 +165,7 @@
         }
       ],
       "caption": "Еще один тестовый пост: ролик плюс дополнительный кадр для проверки смешанной карусели фото+видео.",
-      "location": "Feed Lab",
-      "likes": 41200,
+      "date": "7 апреля 2026",
       "comments": [
         [
           "snap.dev",
@@ -171,12 +176,13 @@
           "На десктопе тоже держится очень уверенно."
         ]
       ],
-      "date": "7 апреля 2026",
-      "badge": "Пост",
+      "location": "Feed Lab",
       "pinned": false,
-      "pin_order": null
+      "likes": 41200
     },
     {
+      "badge": "Фото",
+      "pin_order": null,
       "media": [
         {
           "type": "image",
@@ -185,8 +191,7 @@
         }
       ],
       "caption": "Крупный объект в сетке помогает разбивать однообразие и усиливает глубину профиля.",
-      "location": "Hardware Shot",
-      "likes": 16880,
+      "date": "10 апреля 2026",
       "comments": [
         [
           "dark.theme",
@@ -197,12 +202,13 @@
           "Hover не выглядит дешево, это редкость."
         ]
       ],
-      "date": "10 апреля 2026",
-      "badge": "Фото",
+      "location": "Hardware Shot",
       "pinned": false,
-      "pin_order": null
+      "likes": 16880
     },
     {
+      "badge": "Фото",
+      "pin_order": null,
       "media": [
         {
           "type": "image",
@@ -211,8 +217,7 @@
         }
       ],
       "caption": "Светлый интерьер хорошо балансирует темную палитру страницы и делает профиль живее.",
-      "location": "Nordic Office",
-      "likes": 19440,
+      "date": "14 апреля 2026",
       "comments": [
         [
           "visual.flow",
@@ -223,12 +228,13 @@
           "Смотрится натурально, не как сток ради стока."
         ]
       ],
-      "date": "14 апреля 2026",
-      "badge": "Фото",
+      "location": "Nordic Office",
       "pinned": false,
-      "pin_order": null
+      "likes": 19440
     },
     {
+      "badge": "Видео",
+      "pin_order": null,
       "media": [
         {
           "type": "video",
@@ -237,8 +243,7 @@
         }
       ],
       "caption": "Финальный тестовый ролик для клавиатурной навигации, свайпов и модального просмотра.",
-      "location": "Interaction Test",
-      "likes": 50740,
+      "date": "19 апреля 2026",
       "comments": [
         [
           "touch.lab",
@@ -249,12 +254,13 @@
           "Плотность интерфейса уже очень узнаваемая."
         ]
       ],
-      "date": "19 апреля 2026",
-      "badge": "Видео",
+      "location": "Interaction Test",
       "pinned": false,
-      "pin_order": null
+      "likes": 50740
     },
     {
+      "badge": "Пост",
+      "pin_order": null,
       "media": [
         {
           "type": "image",
@@ -268,8 +274,7 @@
         }
       ],
       "caption": "Дополнительный пост, чтобы грид на 5 колонок выглядел полнее и сразу читался как профиль.",
-      "location": "Open Space",
-      "likes": 15620,
+      "date": "20 апреля 2026",
       "comments": [
         [
           "layout.note",
@@ -280,10 +285,9 @@
           "И хорошо, что на мобильном всё равно остаётся 3."
         ]
       ],
-      "date": "20 апреля 2026",
-      "badge": "Пост",
+      "location": "Open Space",
       "pinned": false,
-      "pin_order": null
+      "likes": 15620
     }
   ],
   "stories": [

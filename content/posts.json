@@ -291,12 +291,12 @@
       "pin_order": null,
       "media": [
         {
-          "type": "video",
-          "uploaded": "",
-          "src": "https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4",
-          "thumb": "",
-          "poster": "https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?auto=format&fit=crop&w=1200&q=80",
-          "alt": ""
+          "type": "image",
+          "uploaded": "/uploads/101shar_1774353630_3859880181888840259_5939120383.jpg"
+        },
+        {
+          "type": "image",
+          "uploaded": "/uploads/101shar_1774353630_3859880181888840259_5939120383.jpg"
         }
       ],
       "caption": "Финальный тестовый ролик для клавиатурной навигации, свайпов и модального просмотра.",
@@ -314,7 +314,7 @@
         }
       ],
       "location": "Interaction Test",
-      "title": "Interaction Test",
+      "title": "Набор Кофейня",
       "pinned": false,
       "categories": [
         "feed",
@@ -327,19 +327,19 @@
       "media": [
         {
           "type": "image",
-          "uploaded": "",
-          "src": "https://images.unsplash.com/photo-1497366412874-3415097a27e7?auto=format&fit=crop&w=1400&q=80",
-          "thumb": "https://images.unsplash.com/photo-1497366412874-3415097a27e7?auto=format&fit=crop&w=900&q=70",
-          "poster": "",
-          "alt": ""
+          "uploaded": "/uploads/101shar_1774623702_3862145351784373553_5939120383.jpg"
         },
         {
           "type": "image",
-          "uploaded": "",
-          "src": "https://images.unsplash.com/photo-1497215842964-222b430dc094?auto=format&fit=crop&w=1400&q=80",
-          "thumb": "https://images.unsplash.com/photo-1497215842964-222b430dc094?auto=format&fit=crop&w=900&q=70",
-          "poster": "",
-          "alt": ""
+          "uploaded": "/uploads/101shar_1774623702_3862145344452704312_5939120383.jpg"
+        },
+        {
+          "type": "image",
+          "uploaded": "/uploads/101shar_1774623702_3862145344712786697_5939120383.jpg"
+        },
+        {
+          "type": "image",
+          "uploaded": "/uploads/101shar_1774623702_3862145345593582983_5939120383.jpg"
         }
       ],
       "caption": "Дополнительный пост, чтобы грид на 5 колонок выглядел полнее и сразу читался как профиль.",
@@ -357,7 +357,7 @@
         }
       ],
       "location": "Open Space",
-      "title": "Open Space",
+      "title": "Набор для девушки",
       "pinned": false,
       "categories": [
         "feed"

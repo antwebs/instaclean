@@ -1,7 +1,216 @@
 
+let posts = [
+  {
+    media: [
+      {
+        type: 'image',
+        src: 'https://images.unsplash.com/photo-1516035069371-29a1b244cc32?auto=format&fit=crop&w=1400&q=80',
+        thumb: 'https://images.unsplash.com/photo-1516035069371-29a1b244cc32?auto=format&fit=crop&w=900&q=70'
+      },
+      {
+        type: 'image',
+        src: 'https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1400&q=80',
+        thumb: 'https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=900&q=70'
+      },
+      {
+        type: 'video',
+        src: 'https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4',
+        poster: 'https://images.unsplash.com/photo-1516035069371-29a1b244cc32?auto=format&fit=crop&w=1200&q=80'
+      }
+    ],
+    caption: 'Минималистичный сетап и рабочий процесс. В этом посте несколько медиа, чтобы проверить карточку-карусель, индикатор и просмотр внутри модального окна.',
+    location: 'Helsinki Studio',
+    likes: 18230,
+    comments: [
+      ['anna.ui', 'Очень чистая композиция, приятно смотреть.'],
+      ['devfocus', 'Вот такой пост с несколькими вложениями уже ближе к реальному профилю.']
+    ],
+    date: '12 марта 2026',
+    badge: 'Пост'
+  },
+  {
+    media: [
+      {
+        type: 'image',
+        src: 'https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1400&q=80',
+        thumb: 'https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=900&q=70'
+      }
+    ],
+    caption: 'Чем чище базовая структура, тем легче потом довести интерфейс до нужной плотности.',
+    location: 'Dev Corner',
+    likes: 24300,
+    comments: [
+      ['frontend.lab', 'Нравится, что всё ещё можно масштабировать без фреймворков.'],
+      ['roman.dev', 'Хорошая база под реальную подгрузку из папки.']
+    ],
+    date: '18 марта 2026',
+    badge: 'Фото'
+  },
+  {
+    media: [
+      {
+        type: 'video',
+        src: 'https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4',
+        poster: 'https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1200&q=80'
+      }
+    ],
+    caption: 'Тестовый ролик для проверки видео в карточке, модальном окне и Reels-ленте.',
+    location: 'Motion Test',
+    likes: 38910,
+    comments: [
+      ['motion.ui', 'Хороший ролик для теста автоплея и стопа вне экрана.'],
+      ['pixelcraft', 'Постер тоже выглядит уместно в гриде.']
+    ],
+    date: '22 марта 2026',
+    badge: 'Видео'
+  },
+  {
+    media: [
+      {
+        type: 'image',
+        src: 'https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=1400&q=80',
+        thumb: 'https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=900&q=70'
+      },
+      {
+        type: 'image',
+        src: 'https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1400&q=80',
+        thumb: 'https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=900&q=70'
+      }
+    ],
+    caption: 'Групповой кадр добавляет в сетку разнообразие и помогает удержать визуальный ритм. Внутри — карусель из двух фотографий.',
+    location: 'Workshop',
+    likes: 20991,
+    comments: [
+      ['ux.daily', 'Даже по одной карточке видно, что сетка собрана не случайно.'],
+      ['design.team', 'Ритм белого и темного кадров очень к месту.']
+    ],
+    date: '27 марта 2026',
+    badge: 'Пост'
+  },
+  {
+    media: [
+      {
+        type: 'image',
+        src: 'https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1400&q=80',
+        thumb: 'https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=900&q=70'
+      }
+    ],
+    caption: 'Мобильный и десктопный сценарии должны ощущаться частью одной системы.',
+    location: 'Responsive Lab',
+    likes: 26500,
+    comments: [
+      ['grid.lover', 'Вот тут особенно видно, что адаптивность продумана заранее.'],
+      ['ios.test', 'На маленьких экранах интерфейс остался плотным и читаемым.']
+    ],
+    date: '2 апреля 2026',
+    badge: 'Фото'
+  },
+  {
+    media: [
+      {
+        type: 'video',
+        src: 'https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.webm',
+        poster: 'https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?auto=format&fit=crop&w=1200&q=80'
+      },
+      {
+        type: 'image',
+        src: 'https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1400&q=80',
+        thumb: 'https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=900&q=70'
+      }
+    ],
+    caption: 'Еще один тестовый пост: ролик плюс дополнительный кадр для проверки смешанной карусели фото+видео.',
+    location: 'Feed Lab',
+    likes: 41200,
+    comments: [
+      ['snap.dev', 'По ощущениям уже близко к реальному просмотру Reels.'],
+      ['qa.front', 'На десктопе тоже держится очень уверенно.']
+    ],
+    date: '7 апреля 2026',
+    badge: 'Пост'
+  },
+  {
+    media: [
+      {
+        type: 'image',
+        src: 'https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1400&q=80',
+        thumb: 'https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=900&q=70'
+      }
+    ],
+    caption: 'Крупный объект в сетке помогает разбивать однообразие и усиливает глубину профиля.',
+    location: 'Hardware Shot',
+    likes: 16880,
+    comments: [
+      ['dark.theme', 'Насыщенность и контраст здесь выставлены очень точно.'],
+      ['igor.codes', 'Hover не выглядит дешево, это редкость.']
+    ],
+    date: '10 апреля 2026',
+    badge: 'Фото'
+  },
+  {
+    media: [
+      {
+        type: 'image',
+        src: 'https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=1400&q=80',
+        thumb: 'https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=900&q=70'
+      }
+    ],
+    caption: 'Светлый интерьер хорошо балансирует темную палитру страницы и делает профиль живее.',
+    location: 'Nordic Office',
+    likes: 19440,
+    comments: [
+      ['visual.flow', 'Такой кадр очень помогает собрать сетку в единый визуальный поток.'],
+      ['nora.ui', 'Смотрится натурально, не как сток ради стока.']
+    ],
+    date: '14 апреля 2026',
+    badge: 'Фото'
+  },
+  {
+    media: [
+      {
+        type: 'video',
+        src: 'https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4',
+        poster: 'https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?auto=format&fit=crop&w=1200&q=80'
+      }
+    ],
+    caption: 'Финальный тестовый ролик для клавиатурной навигации, свайпов и модального просмотра.',
+    location: 'Interaction Test',
+    likes: 50740,
+    comments: [
+      ['touch.lab', 'Свайп между карточками работает очень естественно.'],
+      ['pixelcraft', 'Плотность интерфейса уже очень узнаваемая.']
+    ],
+    date: '19 апреля 2026',
+    badge: 'Видео'
+  },
+  {
+    media: [
+      {
+        type: 'image',
+        src: 'https://images.unsplash.com/photo-1497366412874-3415097a27e7?auto=format&fit=crop&w=1400&q=80',
+        thumb: 'https://images.unsplash.com/photo-1497366412874-3415097a27e7?auto=format&fit=crop&w=900&q=70'
+      },
+      {
+        type: 'image',
+        src: 'https://images.unsplash.com/photo-1497215842964-222b430dc094?auto=format&fit=crop&w=1400&q=80',
+        thumb: 'https://images.unsplash.com/photo-1497215842964-222b430dc094?auto=format&fit=crop&w=900&q=70'
+      }
+    ],
+    caption: 'Дополнительный пост, чтобы грид на 5 колонок выглядел полнее и сразу читался как профиль.',
+    location: 'Open Space',
+    likes: 15620,
+    comments: [
+      ['layout.note', 'На пяти колонках профиль уже совсем иначе воспринимается.'],
+      ['mobile.first', 'И хорошо, что на мобильном всё равно остаётся 3.']
+    ],
+    date: '20 апреля 2026',
+    badge: 'Пост'
+  }
+];
+
+
+let stories = ['UI', 'Code', 'Grid', 'Shots', 'Video', 'Mobile', 'Feed', 'Clean'];
+
 const CONTENT_URL = 'content/posts.json';
-let posts = [];
-let stories = [];
 
 function normalizeComment(comment) {
   if (Array.isArray(comment)) return comment;
@@ -26,18 +235,23 @@ function normalizePost(post) {
     location: post?.location || '',
     likes: Number(post?.likes || 0),
     comments: Array.isArray(post?.comments) ? post.comments.map(normalizeComment) : [],
-    date: post?.date || ''
+    date: post?.date || '',
+    pinned: Boolean(post?.pinned),
+    pin_order: Number(post?.pin_order || 0)
   };
 }
 
 async function loadContent() {
-  const response = await fetch(CONTENT_URL, { cache: 'no-store' });
-  if (!response.ok) throw new Error(`Failed to load content: ${response.status}`);
-  const data = await response.json();
-  posts = Array.isArray(data.posts) ? data.posts.map(normalizePost) : [];
-  stories = Array.isArray(data.stories) ? data.stories.map((item) => typeof item === 'string' ? item : (item?.label || '')).filter(Boolean) : [];
+  try {
+    const response = await fetch(CONTENT_URL, { cache: 'no-store' });
+    if (!response.ok) return;
+    const data = await response.json();
+    if (Array.isArray(data.posts)) posts = data.posts.map(normalizePost);
+    if (Array.isArray(data.stories)) stories = data.stories.map((item) => typeof item === 'string' ? item : (item?.label || '')).filter(Boolean);
+  } catch (error) {
+    console.warn('Using bundled fallback content.', error);
+  }
 }
-
 
 const postGrid = document.getElementById('postGrid');
 const postsCount = document.getElementById('postsCount');
@@ -71,6 +285,21 @@ let currentMediaIndex = 0;
 let lastFocusedCard = null;
 let reelsObserver = null;
 let mobileHeaderObserver = null;
+
+
+function isPinned(post) {
+  return Boolean(post && post.pinned);
+}
+
+function sortPostsForDisplay(list) {
+  const pinned = list.filter((post) => Boolean(post && post.pinned))
+    .sort((a, b) => Number(a.pin_order || 999) - Number(b.pin_order || 999))
+    .slice(0, 3);
+
+  const pinnedSet = new Set(pinned);
+  const regular = list.filter((post) => !pinnedSet.has(post));
+  return [...pinned, ...regular];
+}
 
 function formatNumber(value) {
   return new Intl.NumberFormat('ru-RU').format(value);
@@ -112,6 +341,7 @@ function createGridCard(post, index) {
       ${media}
       <div class="post-card__skeleton"></div>
       ${isMultiMedia(post) ? `<div class="post-card__multi" aria-label="Несколько фото или видео"><span></span><span></span></div>` : ''}
+      ${isPinned(post) ? `<div class="post-card__pin" aria-label="Закреплённый пост"><svg><use href="#i-pin"></use></svg></div>` : ''}
       <div class="post-card__metrics">
         <span>♡ ${Math.round(post.likes / 1000)}k</span>
         <span>◌ ${post.comments.length}</span>
@@ -123,7 +353,6 @@ function createGridCard(post, index) {
 function renderGrid() {
   postGrid.innerHTML = posts.map(createGridCard).join('');
   postsCount.textContent = posts.length;
-  if (!posts.length) return;
 
   [...postGrid.querySelectorAll('.post-card')].forEach((card, index) => {
     const media = card.querySelector('.post-card__media');
@@ -375,7 +604,6 @@ function renderMobileFeed(startIndex) {
 }
 
 function renderPost(index, mediaIndex = 0) {
-  if (!posts.length) return;
   currentIndex = ((index % posts.length) + posts.length) % posts.length;
   const items = getMediaItems(posts[currentIndex]);
   currentMediaIndex = ((mediaIndex % items.length) + items.length) % items.length;
@@ -408,11 +636,6 @@ function stepPost(delta) {
 }
 
 function renderReels() {
-  if (!posts.length) {
-    reelsFeed.innerHTML = '';
-    if (reelsObserver) reelsObserver.disconnect();
-    return;
-  }
   reelsFeed.innerHTML = posts.map((post, index) => {
     const mediaItem = getMediaItems(post).find((item) => item.type === 'video') || getCoverMedia(post);
     const media = mediaItem.type === 'video'
@@ -512,21 +735,16 @@ function bindEvents() {
   });
 }
 
-async function initApp() {
-  try {
-    await loadContent();
-  } catch (error) {
-    console.error('Unable to load CMS content.', error);
-    postGrid.innerHTML = '<div style="padding:24px;color:#a8a8a8;grid-column:1 / -1;">Не удалось загрузить контент. Проверь файл content/posts.json.</div>';
-  }
-
+async function init() {
+  await loadContent();
+  posts = sortPostsForDisplay(posts);
   renderStories();
   renderGrid();
   renderReels();
   bindEvents();
 }
 
-initApp();
+init();
 
 window.addEventListener('resize', () => {
   if (postModal.classList.contains('is-open')) renderPost(currentIndex, currentMediaIndex);

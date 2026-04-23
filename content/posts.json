@@ -81,12 +81,8 @@
       "pin_order": null,
       "media": [
         {
-          "type": "video",
-          "uploaded": "",
-          "src": "https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4",
-          "thumb": "",
-          "poster": "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1200&q=80",
-          "alt": ""
+          "type": "image",
+          "uploaded": "/uploads/101shar_1776691870_3879494948965891614_5939120383.jpg"
         }
       ],
       "caption": "Тестовый ролик для проверки видео в карточке, модальном окне и Reels-ленте.",
@@ -104,7 +100,7 @@
         }
       ],
       "location": "Motion Test",
-      "title": "Motion Test",
+      "title": "Набор с новым трактором",
       "pinned": false,
       "categories": [
         "feed",
@@ -117,19 +113,11 @@
       "media": [
         {
           "type": "image",
-          "uploaded": "",
-          "src": "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=1400&q=80",
-          "thumb": "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=900&q=70",
-          "poster": "",
-          "alt": ""
+          "uploaded": "/uploads/101shar_1776690337_3879481986226111775_5939120383.jpg"
         },
         {
           "type": "image",
-          "uploaded": "",
-          "src": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1400&q=80",
-          "thumb": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=900&q=70",
-          "poster": "",
-          "alt": ""
+          "uploaded": "/uploads/101shar_1776691870_3879494946927461611_5939120383.jpg"
         }
       ],
       "caption": "Групповой кадр добавляет в сетку разнообразие и помогает удержать визуальный ритм. Внутри — карусель из двух фотографий.",
@@ -147,7 +135,7 @@
         }
       ],
       "location": "Workshop",
-      "title": "Workshop",
+      "title": "Набор с животными с фермы",
       "pinned": false,
       "categories": [
         "feed"

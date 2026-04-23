@@ -5,27 +5,15 @@
       "media": [
         {
           "type": "image",
-          "uploaded": "",
-          "src": "https://images.unsplash.com/photo-1516035069371-29a1b244cc32?auto=format&fit=crop&w=1400&q=80",
-          "thumb": "https://images.unsplash.com/photo-1516035069371-29a1b244cc32?auto=format&fit=crop&w=900&q=70",
-          "poster": "",
-          "alt": ""
+          "uploaded": "/uploads/101shar_1776607536_3878786147811355927_5939120383.jpg"
         },
         {
           "type": "image",
-          "uploaded": "",
-          "src": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1400&q=80",
-          "thumb": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=900&q=70",
-          "poster": "",
-          "alt": ""
+          "uploaded": "/uploads/101shar_1776607536_3878786152190193939_5939120383.jpg"
         },
         {
-          "type": "video",
-          "uploaded": "",
-          "src": "https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4",
-          "thumb": "",
-          "poster": "https://images.unsplash.com/photo-1516035069371-29a1b244cc32?auto=format&fit=crop&w=1200&q=80",
-          "alt": ""
+          "type": "image",
+          "uploaded": "/uploads/101shar_1776607536_3878786154564206717_5939120383.jpg"
         }
       ],
       "caption": "Минималистичный сетап и рабочий процесс. В этом посте несколько медиа, чтобы проверить карточку-карусель, индикатор и просмотр внутри модального окна.",
@@ -43,7 +31,7 @@
         }
       ],
       "location": "Helsinki Studio",
-      "title": "Helsinki Studio",
+      "title": "Новый набор с новой фигурой",
       "pinned": false,
       "categories": [
         "feed",

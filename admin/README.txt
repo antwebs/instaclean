@@ -1,8 +1,15 @@
-Decap CMS setup
+Netlify + Decap CMS setup
 
-1. Put this project in a GitHub repository.
-2. In admin/config.yml replace REPLACE_WITH_YOUR_GITHUB_USERNAME/REPLACE_WITH_YOUR_REPOSITORY with your real repo.
-3. For local editing install the Decap local proxy:
-   npx decap-server
-4. Then open /admin locally.
-5. For production you can switch the backend to git-gateway if you deploy on Netlify.
+1. Push this project to GitHub.
+2. In Netlify create a new site from that GitHub repository.
+3. In Netlify enable Identity.
+4. Under Identity registration choose Invite only or Open.
+5. Under Identity services enable Git Gateway.
+6. Open /admin on the deployed site.
+7. Invite yourself from Netlify Identity if registration is Invite only.
+
+Notes:
+- The CMS backend is already set to git-gateway.
+- Content is stored in content/posts.json.
+- Uploaded media goes to uploads/.
+- local_backend: true remains enabled for local editing with `npx decap-server`.

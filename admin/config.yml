@@ -6,37 +6,77 @@ backend:
 
 media_folder: "uploads"
 public_folder: "/uploads"
+publish_mode: editorial_workflow
 
 collections:
-  - name: "site_content"
-    label: "Site Content"
+  - name: "profile"
+    label: "Profile"
     files:
-      - name: "posts"
-        label: "Posts and Stories"
-        file: "content/posts.json"
+      - name: "profile"
+        label: "Profile settings"
+        file: "content/profile.json"
+        format: "json"
+        fields:
+          - { label: "Username", name: "username", widget: "string" }
+          - { label: "Display name", name: "display_name", widget: "string" }
+          - { label: "Bio", name: "bio", widget: "text" }
+          - { label: "Meta line", name: "meta", widget: "string", required: false }
+          - { label: "Link text", name: "link_text", widget: "string", required: false }
+          - { label: "Link URL", name: "link_url", widget: "string", required: false }
+          - { label: "Followers text", name: "followers_text", widget: "string" }
+          - { label: "Following text", name: "following_text", widget: "string" }
+          - { label: "Avatar initials", name: "avatar_initials", widget: "string", pattern: ['^[A-Za-zА-Яа-я0-9]{1,3}$', '1–3 символа'] }
+          - { label: "Verified", name: "is_verified", widget: "boolean", default: true, required: false }
+
+  - name: "stories"
+    label: "Stories"
+    files:
+      - name: "stories"
+        label: "Highlights"
+        file: "content/stories.json"
         format: "json"
         fields:
           - label: "Stories"
             name: "stories"
             widget: "list"
-            field:
-              label: "Story label"
-              name: "label"
-              widget: "string"
+            summary: "{{fields.label}}"
+            fields:
+              - { label: "Label", name: "label", widget: "string" }
+
+  - name: "posts"
+    label: "Posts"
+    files:
+      - name: "posts"
+        label: "Post list"
+        file: "content/posts.json"
+        format: "json"
+        fields:
           - label: "Posts"
             name: "posts"
             widget: "list"
-            summary: "{{fields.location}} — {{fields.date}}"
+            summary: "{{fields.title}}"
             fields:
-              - { label: "Location", name: "location", widget: "string" }
+              - { label: "Slug", name: "slug", widget: "string", hint: "Уникальный ID поста" }
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Location", name: "location", widget: "string", required: false }
               - { label: "Caption", name: "caption", widget: "text" }
               - { label: "Likes", name: "likes", widget: "number", value_type: "int", min: 0 }
               - { label: "Date", name: "date", widget: "string" }
-              - { label: "Закрепить", name: "pinned", widget: "boolean", default: false, required: false }
-              - { label: "Порядок закрепления", name: "pin_order", widget: "number", required: false, min: 1, max: 3, value_type: "int" }
+              - { label: "Sort order", name: "sort_order", widget: "number", value_type: "int", min: 1, default: 1 }
+              - label: "Categories"
+                name: "categories"
+                widget: "select"
+                multiple: true
+                required: false
+                options:
+                  - { label: "Feed", value: "feed" }
+                  - { label: "Reel", value: "reel" }
+                  - { label: "Featured", value: "featured" }
+                  - { label: "Promo", value: "promo" }
               - label: "Comments"
                 name: "comments"
                 widget: "list"
+                required: false
                 summary: "{{fields.username}}"
                 fields:
                   - { label: "Username", name: "username", widget: "string" }
@@ -44,12 +84,17 @@ collections:
               - label: "Media"
                 name: "media"
                 widget: "list"
+                min: 1
                 summary: "{{fields.type}}"
                 fields:
                   - label: "Type"
                     name: "type"
                     widget: "select"
-                    options: ["image", "video"]
-                  - { label: "Source URL or uploaded file", name: "src", widget: "string" }
-                  - { label: "Thumbnail URL (optional)", name: "thumb", widget: "string", required: false }
-                  - { label: "Poster URL (optional)", name: "poster", widget: "string", required: false }
+                    options:
+                      - { label: "Image", value: "image" }
+                      - { label: "Video", value: "video" }
+                  - { label: "Upload file", name: "uploaded", widget: "file", required: false, hint: "Загрузи файл сюда или оставь пустым, если используешь URL ниже" }
+                  - { label: "Source URL or path", name: "src", widget: "string", required: false, hint: "Можно вставить внешний URL или относительный путь" }
+                  - { label: "Thumbnail", name: "thumb", widget: "image", required: false }
+                  - { label: "Poster", name: "poster", widget: "image", required: false }
+                  - { label: "Alt", name: "alt", widget: "string", required: false }

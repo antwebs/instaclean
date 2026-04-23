@@ -1,27 +1,7 @@
 {
   "posts": [
     {
-      "slug": "post-001",
-      "title": "Helsinki Studio",
-      "location": "Helsinki Studio",
-      "caption": "Минималистичный сетап и рабочий процесс. В этом посте несколько медиа, чтобы проверить карточку-карусель, индикатор и просмотр внутри модального окна.",
-      "likes": 18230,
-      "date": "12 марта 2026",
-      "sort_order": 1,
-      "categories": [
-        "feed",
-        "reel"
-      ],
-      "comments": [
-        {
-          "username": "anna.ui",
-          "text": "Очень чистая композиция, приятно смотреть."
-        },
-        {
-          "username": "devfocus",
-          "text": "Вот такой пост с несколькими вложениями уже ближе к реальному профилю."
-        }
-      ],
+      "pin_order": null,
       "media": [
         {
           "type": "image",
@@ -48,30 +28,31 @@
           "alt": ""
         }
       ],
-      "pinned": false,
-      "pin_order": null
-    },
-    {
-      "slug": "post-002",
-      "title": "Dev Corner",
-      "location": "Dev Corner",
-      "caption": "Чем чище базовая структура, тем легче потом довести интерфейс до нужной плотности.",
-      "likes": 24300,
-      "date": "18 марта 2026",
-      "sort_order": 2,
-      "categories": [
-        "feed"
-      ],
+      "caption": "Минималистичный сетап и рабочий процесс. В этом посте несколько медиа, чтобы проверить карточку-карусель, индикатор и просмотр внутри модального окна.",
+      "slug": "post-001",
+      "sort_order": 1,
+      "date": "12 марта 2026",
       "comments": [
         {
-          "username": "frontend.lab",
-          "text": "Нравится, что всё ещё можно масштабировать без фреймворков."
+          "username": "anna.ui",
+          "text": "Очень чистая композиция, приятно смотреть."
         },
         {
-          "username": "roman.dev",
-          "text": "Хорошая база под реальную подгрузку из папки."
+          "username": "devfocus",
+          "text": "Вот такой пост с несколькими вложениями уже ближе к реальному профилю."
         }
       ],
+      "location": "Helsinki Studio",
+      "title": "Helsinki Studio",
+      "pinned": false,
+      "categories": [
+        "feed",
+        "reel"
+      ],
+      "likes": 18230
+    },
+    {
+      "pin_order": null,
       "media": [
         {
           "type": "image",
@@ -82,31 +63,30 @@
           "alt": ""
         }
       ],
-      "pinned": false,
-      "pin_order": null
-    },
-    {
-      "slug": "post-003",
-      "title": "Motion Test",
-      "location": "Motion Test",
-      "caption": "Тестовый ролик для проверки видео в карточке, модальном окне и Reels-ленте.",
-      "likes": 38910,
-      "date": "22 марта 2026",
-      "sort_order": 3,
-      "categories": [
-        "feed",
-        "reel"
-      ],
+      "caption": "Чем чище базовая структура, тем легче потом довести интерфейс до нужной плотности.",
+      "slug": "post-002",
+      "sort_order": 2,
+      "date": "18 марта 2026",
       "comments": [
         {
-          "username": "motion.ui",
-          "text": "Хороший ролик для теста автоплея и стопа вне экрана."
+          "username": "frontend.lab",
+          "text": "Нравится, что всё ещё можно масштабировать без фреймворков."
         },
         {
-          "username": "pixelcraft",
-          "text": "Постер тоже выглядит уместно в гриде."
+          "username": "roman.dev",
+          "text": "Хорошая база под реальную подгрузку из папки."
         }
       ],
+      "location": "Dev Corner",
+      "title": "Dev Corner",
+      "pinned": false,
+      "categories": [
+        "feed"
+      ],
+      "likes": 24300
+    },
+    {
+      "pin_order": null,
       "media": [
         {
           "type": "video",
@@ -117,30 +97,31 @@
           "alt": ""
         }
       ],
-      "pinned": false,
-      "pin_order": null
-    },
-    {
-      "slug": "post-004",
-      "title": "Workshop",
-      "location": "Workshop",
-      "caption": "Групповой кадр добавляет в сетку разнообразие и помогает удержать визуальный ритм. Внутри — карусель из двух фотографий.",
-      "likes": 20991,
-      "date": "27 марта 2026",
-      "sort_order": 4,
-      "categories": [
-        "feed"
-      ],
+      "caption": "Тестовый ролик для проверки видео в карточке, модальном окне и Reels-ленте.",
+      "slug": "post-003",
+      "sort_order": 3,
+      "date": "22 марта 2026",
       "comments": [
         {
-          "username": "ux.daily",
-          "text": "Даже по одной карточке видно, что сетка собрана не случайно."
+          "username": "motion.ui",
+          "text": "Хороший ролик для теста автоплея и стопа вне экрана."
         },
         {
-          "username": "design.team",
-          "text": "Ритм белого и темного кадров очень к месту."
+          "username": "pixelcraft",
+          "text": "Постер тоже выглядит уместно в гриде."
         }
       ],
+      "location": "Motion Test",
+      "title": "Motion Test",
+      "pinned": false,
+      "categories": [
+        "feed",
+        "reel"
+      ],
+      "likes": 38910
+    },
+    {
+      "pin_order": null,
       "media": [
         {
           "type": "image",
@@ -159,30 +140,30 @@
           "alt": ""
         }
       ],
+      "caption": "Групповой кадр добавляет в сетку разнообразие и помогает удержать визуальный ритм. Внутри — карусель из двух фотографий.",
+      "slug": "post-004",
+      "sort_order": 4,
+      "date": "27 марта 2026",
+      "comments": [
+        {
+          "username": "ux.daily",
+          "text": "Даже по одной карточке видно, что сетка собрана не случайно."
+        },
+        {
+          "username": "design.team",
+          "text": "Ритм белого и темного кадров очень к месту."
+        }
+      ],
+      "location": "Workshop",
+      "title": "Workshop",
       "pinned": false,
-      "pin_order": null
-    },
-    {
-      "slug": "post-005",
-      "title": "Responsive Lab",
-      "location": "Responsive Lab",
-      "caption": "Мобильный и десктопный сценарии должны ощущаться частью одной системы.",
-      "likes": 26500,
-      "date": "2 апреля 2026",
-      "sort_order": 5,
       "categories": [
         "feed"
       ],
-      "comments": [
-        {
-          "username": "grid.lover",
-          "text": "Вот тут особенно видно, что адаптивность продумана заранее."
-        },
-        {
-          "username": "ios.test",
-          "text": "На маленьких экранах интерфейс остался плотным и читаемым."
-        }
-      ],
+      "likes": 20991
+    },
+    {
+      "pin_order": null,
       "media": [
         {
           "type": "image",
@@ -193,31 +174,30 @@
           "alt": ""
         }
       ],
-      "pinned": false,
-      "pin_order": null
-    },
-    {
-      "slug": "post-006",
-      "title": "Feed Lab",
-      "location": "Feed Lab",
-      "caption": "Еще один тестовый пост: ролик плюс дополнительный кадр для проверки смешанной карусели фото+видео.",
-      "likes": 41200,
-      "date": "7 апреля 2026",
-      "sort_order": 6,
-      "categories": [
-        "feed",
-        "reel"
-      ],
+      "caption": "Мобильный и десктопный сценарии должны ощущаться частью одной системы.",
+      "slug": "post-005",
+      "sort_order": 5,
+      "date": "2 апреля 2026",
       "comments": [
         {
-          "username": "snap.dev",
-          "text": "По ощущениям уже близко к реальному просмотру Reels."
+          "username": "grid.lover",
+          "text": "Вот тут особенно видно, что адаптивность продумана заранее."
         },
         {
-          "username": "qa.front",
-          "text": "На десктопе тоже держится очень уверенно."
+          "username": "ios.test",
+          "text": "На маленьких экранах интерфейс остался плотным и читаемым."
         }
       ],
+      "location": "Responsive Lab",
+      "title": "Responsive Lab",
+      "pinned": false,
+      "categories": [
+        "feed"
+      ],
+      "likes": 26500
+    },
+    {
+      "pin_order": null,
       "media": [
         {
           "type": "video",
@@ -236,30 +216,31 @@
           "alt": ""
         }
       ],
-      "pinned": false,
-      "pin_order": null
-    },
-    {
-      "slug": "post-007",
-      "title": "Hardware Shot",
-      "location": "Hardware Shot",
-      "caption": "Крупный объект в сетке помогает разбивать однообразие и усиливает глубину профиля.",
-      "likes": 16880,
-      "date": "10 апреля 2026",
-      "sort_order": 7,
-      "categories": [
-        "feed"
-      ],
+      "caption": "Еще один тестовый пост: ролик плюс дополнительный кадр для проверки смешанной карусели фото+видео.",
+      "slug": "post-006",
+      "sort_order": 6,
+      "date": "7 апреля 2026",
       "comments": [
         {
-          "username": "dark.theme",
-          "text": "Насыщенность и контраст здесь выставлены очень точно."
+          "username": "snap.dev",
+          "text": "По ощущениям уже близко к реальному просмотру Reels."
         },
         {
-          "username": "igor.codes",
-          "text": "Hover не выглядит дешево, это редкость."
+          "username": "qa.front",
+          "text": "На десктопе тоже держится очень уверенно."
         }
       ],
+      "location": "Feed Lab",
+      "title": "Feed Lab",
+      "pinned": false,
+      "categories": [
+        "feed",
+        "reel"
+      ],
+      "likes": 41200
+    },
+    {
+      "pin_order": null,
       "media": [
         {
           "type": "image",
@@ -270,20 +251,52 @@
           "alt": ""
         }
       ],
+      "caption": "Крупный объект в сетке помогает разбивать однообразие и усиливает глубину профиля.",
+      "slug": "post-007",
+      "sort_order": 7,
+      "date": "10 апреля 2026",
+      "comments": [
+        {
+          "username": "dark.theme",
+          "text": "Насыщенность и контраст здесь выставлены очень точно."
+        },
+        {
+          "username": "igor.codes",
+          "text": "Hover не выглядит дешево, это редкость."
+        }
+      ],
+      "location": "Hardware Shot",
+      "title": "Hardware Shot",
       "pinned": false,
-      "pin_order": null
-    },
-    {
-      "slug": "post-008",
-      "title": "Nordic Office",
-      "location": "Nordic Office",
-      "caption": "Светлый интерьер хорошо балансирует темную палитру страницы и делает профиль живее.",
-      "likes": 19440,
-      "date": "14 апреля 2026",
-      "sort_order": 8,
       "categories": [
         "feed"
       ],
+      "likes": 16880
+    },
+    {
+      "pin_order": null,
+      "media": [
+        {
+          "uploaded": "/uploads/101shar_1775140979_3866484366151034869_5939120383.jpg",
+          "type": "image"
+        },
+        {
+          "type": "image",
+          "uploaded": "/uploads/101shar_1775140979_3866484361117828347_5939120383.jpg"
+        },
+        {
+          "type": "image",
+          "uploaded": "/uploads/101shar_1775140979_3866484369741369072_5939120383.jpg"
+        },
+        {
+          "type": "image",
+          "uploaded": "/uploads/101shar_1775140979_3866484376754216725_5939120383.jpg"
+        }
+      ],
+      "caption": "Светлый интерьер хорошо балансирует темную палитру страницы и делает профиль живее.",
+      "slug": "post-008",
+      "sort_order": 8,
+      "date": "14 апреля 2026",
       "comments": [
         {
           "username": "visual.flow",
@@ -294,41 +307,16 @@
           "text": "Смотрится натурально, не как сток ради стока."
         }
       ],
-      "media": [
-        {
-          "type": "image",
-          "uploaded": "",
-          "src": "https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=1400&q=80",
-          "thumb": "https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=900&q=70",
-          "poster": "",
-          "alt": ""
-        }
-      ],
+      "location": "Nordic Office",
+      "title": "Nordic Office",
       "pinned": false,
-      "pin_order": null
+      "categories": [
+        "feed"
+      ],
+      "likes": 19440
     },
     {
-      "slug": "post-009",
-      "title": "Interaction Test",
-      "location": "Interaction Test",
-      "caption": "Финальный тестовый ролик для клавиатурной навигации, свайпов и модального просмотра.",
-      "likes": 50740,
-      "date": "19 апреля 2026",
-      "sort_order": 9,
-      "categories": [
-        "feed",
-        "reel"
-      ],
-      "comments": [
-        {
-          "username": "touch.lab",
-          "text": "Свайп между карточками работает очень естественно."
-        },
-        {
-          "username": "pixelcraft",
-          "text": "Плотность интерфейса уже очень узнаваемая."
-        }
-      ],
+      "pin_order": null,
       "media": [
         {
           "type": "video",
@@ -339,30 +327,31 @@
           "alt": ""
         }
       ],
-      "pinned": false,
-      "pin_order": null
-    },
-    {
-      "slug": "post-010",
-      "title": "Open Space",
-      "location": "Open Space",
-      "caption": "Дополнительный пост, чтобы грид на 5 колонок выглядел полнее и сразу читался как профиль.",
-      "likes": 15620,
-      "date": "20 апреля 2026",
-      "sort_order": 10,
-      "categories": [
-        "feed"
-      ],
+      "caption": "Финальный тестовый ролик для клавиатурной навигации, свайпов и модального просмотра.",
+      "slug": "post-009",
+      "sort_order": 9,
+      "date": "19 апреля 2026",
       "comments": [
         {
-          "username": "layout.note",
-          "text": "На пяти колонках профиль уже совсем иначе воспринимается."
+          "username": "touch.lab",
+          "text": "Свайп между карточками работает очень естественно."
         },
         {
-          "username": "mobile.first",
-          "text": "И хорошо, что на мобильном всё равно остаётся 3."
+          "username": "pixelcraft",
+          "text": "Плотность интерфейса уже очень узнаваемая."
         }
       ],
+      "location": "Interaction Test",
+      "title": "Interaction Test",
+      "pinned": false,
+      "categories": [
+        "feed",
+        "reel"
+      ],
+      "likes": 50740
+    },
+    {
+      "pin_order": null,
       "media": [
         {
           "type": "image",
@@ -381,8 +370,27 @@
           "alt": ""
         }
       ],
+      "caption": "Дополнительный пост, чтобы грид на 5 колонок выглядел полнее и сразу читался как профиль.",
+      "slug": "post-010",
+      "sort_order": 10,
+      "date": "20 апреля 2026",
+      "comments": [
+        {
+          "username": "layout.note",
+          "text": "На пяти колонках профиль уже совсем иначе воспринимается."
+        },
+        {
+          "username": "mobile.first",
+          "text": "И хорошо, что на мобильном всё равно остаётся 3."
+        }
+      ],
+      "location": "Open Space",
+      "title": "Open Space",
       "pinned": false,
-      "pin_order": null
+      "categories": [
+        "feed"
+      ],
+      "likes": 15620
     }
   ],
   "stories": []

@@ -113,11 +113,11 @@
       "media": [
         {
           "type": "image",
-          "uploaded": "/uploads/101shar_1776690337_3879481986226111775_5939120383.jpg"
+          "uploaded": "/uploads/101shar_1776691870_3879494946927461611_5939120383.jpg"
         },
         {
           "type": "image",
-          "uploaded": "/uploads/101shar_1776691870_3879494946927461611_5939120383.jpg"
+          "uploaded": "/uploads/101shar_1776690337_3879481986226111775_5939120383.jpg"
         }
       ],
       "caption": "Групповой кадр добавляет в сетку разнообразие и помогает удержать визуальный ритм. Внутри — карусель из двух фотографий.",
@@ -147,11 +147,11 @@
       "media": [
         {
           "type": "image",
-          "uploaded": "",
-          "src": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1400&q=80",
-          "thumb": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=900&q=70",
-          "poster": "",
-          "alt": ""
+          "uploaded": "/uploads/101shar_1776788906_3880308578863372399_5939120383.jpg"
+        },
+        {
+          "type": "image",
+          "uploaded": "/uploads/101shar_1776788906_3880308587126149541_5939120383.jpg"
         }
       ],
       "caption": "Мобильный и десктопный сценарии должны ощущаться частью одной системы.",
@@ -169,7 +169,7 @@
         }
       ],
       "location": "Responsive Lab",
-      "title": "Responsive Lab",
+      "title": "Набор морской конек",
       "pinned": false,
       "categories": [
         "feed"
@@ -180,20 +180,12 @@
       "pin_order": null,
       "media": [
         {
-          "type": "video",
-          "uploaded": "",
-          "src": "https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.webm",
-          "thumb": "",
-          "poster": "https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?auto=format&fit=crop&w=1200&q=80",
-          "alt": ""
+          "type": "image",
+          "uploaded": "/uploads/101shar_1776789088_3880309821467898242_5939120383.jpg"
         },
         {
           "type": "image",
-          "uploaded": "",
-          "src": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1400&q=80",
-          "thumb": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=900&q=70",
-          "poster": "",
-          "alt": ""
+          "uploaded": "/uploads/101shar_1776789088_3880309826324866286_5939120383.jpg"
         }
       ],
       "caption": "Еще один тестовый пост: ролик плюс дополнительный кадр для проверки смешанной карусели фото+видео.",
@@ -211,7 +203,7 @@
         }
       ],
       "location": "Feed Lab",
-      "title": "Feed Lab",
+      "title": "Набор для современного мальчика",
       "pinned": false,
       "categories": [
         "feed",
@@ -224,11 +216,11 @@
       "media": [
         {
           "type": "image",
-          "uploaded": "",
-          "src": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1400&q=80",
-          "thumb": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=900&q=70",
-          "poster": "",
-          "alt": ""
+          "uploaded": "/uploads/101shar_1776797355_3880379437551721584_5939120383.jpg"
+        },
+        {
+          "type": "image",
+          "uploaded": "/uploads/101shar_1776797355_3880379449773941854_5939120383-1-.jpg"
         }
       ],
       "caption": "Крупный объект в сетке помогает разбивать однообразие и усиливает глубину профиля.",
@@ -246,7 +238,7 @@
         }
       ],
       "location": "Hardware Shot",
-      "title": "Hardware Shot",
+      "title": "Набор Русская красавица",
       "pinned": false,
       "categories": [
         "feed"
